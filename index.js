@@ -17,8 +17,8 @@ const h1E1 = document.createElement(`h1`);
 
 const group1 = document.createElement(`section`)
 
-const nameList = document.createElement(`ol`);
 
+const nameList = document.createElement(`ul`);
     const nLi1 = document.createElement(`li`);
     const nLi2 = document.createElement(`li`);
     const nLi3 = document.createElement(`li`);
@@ -27,7 +27,7 @@ const nameList = document.createElement(`ol`);
     const nLi6 = document.createElement(`li`);
     const nLi7 = document.createElement(`li`);
     const nLi8 = document.createElement(`li`);
-const priceList = document.createElement(`ol`);
+const priceList = document.createElement(`ul`);
     const pLi1 = document.createElement(`li`);
     const pLi2 = document.createElement(`li`);
     const pLi3 = document.createElement(`li`);
@@ -36,7 +36,7 @@ const priceList = document.createElement(`ol`);
     const pLi6 = document.createElement(`li`);
     const pLi7 = document.createElement(`li`);
     const pLi8 = document.createElement(`li`);
-const occupationList = document.createElement(`ol`);
+const occupationList = document.createElement(`ul`);
     const oLi1 = document.createElement(`li`);
     const oLi2 = document.createElement(`li`);
     const oLi3 = document.createElement(`li`);
@@ -46,6 +46,7 @@ const occupationList = document.createElement(`ol`);
     const oLi7 = document.createElement(`li`);
     const oLi8 = document.createElement(`li`);
 
+
 //this is to add elements to HTML
 body.appendChild(h1);
 body.appendChild(h2);
@@ -53,36 +54,32 @@ body.appendChild(h1E1);
 
 body.appendChild(group1);
     group1.appendChild(nameList);
-        group1.appendChild(nLi1);
-        group1.appendChild(nLi2);
-        group1.appendChild(nLi3);
-        group1.appendChild(nLi4);
-        group1.appendChild(nLi5);
-        group1.appendChild(nLi6);
-        group1.appendChild(nLi7);
-        group1.appendChild(nLi8);
+        nameList.appendChild(nLi1);
+        nameList.appendChild(nLi2);
+        nameList.appendChild(nLi3);
+        nameList.appendChild(nLi4);
+        nameList.appendChild(nLi5);
+        nameList.appendChild(nLi6);
+        nameList.appendChild(nLi7);
+        nameList.appendChild(nLi8);
     group1.appendChild(priceList);
-        group1.appendChild(pLi1);
-        group1.appendChild(pLi2);
-        group1.appendChild(pLi3);
-        group1.appendChild(pLi4);
-        group1.appendChild(pLi5);
-        group1.appendChild(pLi6);
-        group1.appendChild(pLi7);
-        group1.appendChild(pLi8);
+        priceList.appendChild(pLi1);
+        priceList.appendChild(pLi2);
+        priceList.appendChild(pLi3);
+        priceList.appendChild(pLi4);
+        priceList.appendChild(pLi5);
+        priceList.appendChild(pLi6);
+        priceList.appendChild(pLi7);
+        priceList.appendChild(pLi8);
     group1.appendChild(occupationList);
-        group1.appendChild(oLi1);
-        group1.appendChild(oLi2);
-        group1.appendChild(oLi3);
-        group1.appendChild(oLi4);
-        group1.appendChild(oLi5);
-        group1.appendChild(oLi6);
-        group1.appendChild(oLi7);
-        group1.appendChild(oLi8);
-
-
-
-
+        occupationList.appendChild(oLi1);
+        occupationList.appendChild(oLi2);
+        occupationList.appendChild(oLi3);
+        occupationList.appendChild(oLi4);
+        occupationList.appendChild(oLi5);
+        occupationList.appendChild(oLi6);
+        occupationList.appendChild(oLi7);
+        occupationList.appendChild(oLi8);
 
 
 //this is to set attributes of each element
@@ -128,7 +125,7 @@ const average = (getAverage(prices).toFixed(2));
 h1.textContent = `Freelancer Forum`;
 h2.textContent = `The average starting price is: $${average}`;
 h1E1.textContent = `Available Freelancers`;
-nameList.textContent = `Name`;
+//nameList.textContent = `Name`;
     nLi1.textContent = `${freelancers[0].name}`;
     nLi2.textContent = `${freelancers[1].name}`;
     nLi3.textContent = `${freelancers[2].name}`;
@@ -137,7 +134,7 @@ nameList.textContent = `Name`;
     nLi6.textContent = `${freelancers[5].name}`;
     nLi7.textContent = `${freelancers[6].name}`;
     nLi8.textContent = `${freelancers[7].name}`;
-priceList.textContent = `Price`;
+//priceList.textContent = `Price`;
     pLi1.textContent = `$${freelancers[0].price}`;
     pLi2.textContent = `$${freelancers[1].price}`;
     pLi3.textContent = `$${freelancers[2].price}`;
@@ -146,7 +143,7 @@ priceList.textContent = `Price`;
     pLi6.textContent = `$${freelancers[5].price}`;
     pLi7.textContent = `$${freelancers[6].price}`;
     pLi8.textContent = `$${freelancers[7].price}`;
-occupationList.textContent = `Occupations`;
+//occupationList.textContent = `Occupations`;
     oLi1.textContent = `${freelancers[0].occupation}`;
     oLi2.textContent = `${freelancers[1].occupation}`;
     oLi3.textContent = `${freelancers[2].occupation}`;
